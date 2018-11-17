@@ -63,6 +63,9 @@ else
  exit 1;
 fi
 
+#不要なファイルの削除
+rm ./com_tmp
+
 #コンピュータの手とユーザーの手を表示
 echo "コンピュータの手 : "$com_hand_dec
 #echo "あなたの手："$input
@@ -102,6 +105,5 @@ if [ $com_hand_dec = "パー" ]; then
   exit 0;
  fi
 fi
-
 
 
